@@ -16,7 +16,7 @@ public class ShootingGame {
         int xPos = (screenWidth - gameWidth)/2;
         int yPos = (screenHeight - gameHeight)/2;
 
-        GameWindow newGame = new GameWindow(xPos, yPos, gameWidth, gameHeight);
+        GameWindow game = new GameWindow(xPos, yPos, gameWidth, gameHeight);
 
     }
 }
