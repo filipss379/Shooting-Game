@@ -1,22 +1,20 @@
 package shootingGame.GUIElements;
 
-
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class CloseButton extends JButton {
+public class StatisticsButton extends JButton {
 
-    private static String closeText = "Exit";
+    private static String statisticsText  = "Statistics";
 
-
-    public CloseButton (final int xPos,
-                        final int yPos,
-                        final int width,
-                        final int height) {
+    public StatisticsButton (final int xPos,
+                             final int yPos,
+                             final int width,
+                             final int height) {
         setSize(width, height);
         setLocation(xPos, yPos);
-        setText(closeText);
+        setText(statisticsText);
         setVisible(true);
         setBorderPainted(false);
 

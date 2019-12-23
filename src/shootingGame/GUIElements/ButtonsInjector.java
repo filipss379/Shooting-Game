@@ -1,15 +1,53 @@
 package shootingGame.GUIElements;
 
-public class ButtonsInjector {
 
-    private static CloseButton closeButton;
+import javax.swing.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class ButtonsInjector implements ButtonsCommonValues {
+
+    private static JButton[] buttons;
 
     public static void loadGUIComponents() {
-        closeButton = new CloseButton(
-                100, 500, 200, 100);
+        buttons = new JButton[3];
+        buttons[0] = new CloseButton(
+                100, 450, 300, 100);
+        buttons[1] = new StatisticsButton(
+                100, 300, 300, 100);
+        setCommonValues();
     }
 
-    public static CloseButton getCloseButton() {
-        return closeButton;
+    private static void setCommonValues() {
+        try {
+            for(final JButton button : buttons) {
+                button.setBackground(backgroundNoActionColor);
+                button.setForeground(foregroundColor);
+                button.setFont(font);
+
+                button.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseEntered(MouseEvent e) {
+                        button.setBackground(backgroundMouseEnteredColor);
+                    }
+
+                    @Override
+                    public void mouseExited(MouseEvent e) {
+                        button.setBackground(backgroundNoActionColor);
+                    }
+                });
+            }
+
+        } catch(NullPointerException ex) {
+            System.err.println("Wyjatek" + ex);
+        }
+    }
+
+    public static JButton getCloseButton() {
+        return buttons[0];
+    }
+
+    public static JButton getStatisticsButton() {
+        return buttons[1];
     }
 }
