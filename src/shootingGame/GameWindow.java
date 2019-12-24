@@ -1,9 +1,7 @@
 package shootingGame;
 
 import shootingGame.GUIElements.ButtonsInjector;
-
 import javax.swing.*;
-import java.awt.*;
 
 public class GameWindow extends JFrame {
 
@@ -13,7 +11,6 @@ public class GameWindow extends JFrame {
                        final int height) {
         super();
         loadResources();
-        setLayout(new GridLayout(1,1));
         setSize(width, height);
         setLocation(xPos, yPos);
         setResizable(false);

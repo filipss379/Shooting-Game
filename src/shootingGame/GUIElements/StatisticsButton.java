@@ -21,7 +21,9 @@ public class StatisticsButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                System.exit(1);
+                setVisible(false);
+                ButtonsInjector.getStartGameButton().setVisible(false);
+                ButtonsInjector.getCloseButton().setVisible(false);
             }
         });
     }

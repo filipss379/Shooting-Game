@@ -15,6 +15,8 @@ public class ButtonsInjector implements ButtonsCommonValues {
                 100, 450, 300, 100);
         buttons[1] = new StatisticsButton(
                 100, 300, 300, 100);
+        buttons[2] = new StartGameButton(
+                100, 150, 300, 100);
         setCommonValues();
     }
 
@@ -39,7 +41,8 @@ public class ButtonsInjector implements ButtonsCommonValues {
             }
 
         } catch(NullPointerException ex) {
-            System.err.println("Wyjatek" + ex);
+            System.err.println(
+                    "Exception while setting button common valules " + ex);
         }
     }
 
@@ -49,5 +52,9 @@ public class ButtonsInjector implements ButtonsCommonValues {
 
     public static JButton getStatisticsButton() {
         return buttons[1];
+    }
+
+    public static JButton getStartGameButton() {
+        return buttons[2];
     }
 }

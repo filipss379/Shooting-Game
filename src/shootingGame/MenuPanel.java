@@ -11,13 +11,17 @@ public class MenuPanel extends JPanel {
                       final int height) {
         setSize(width, height);
         setVisible(true);
-        add(ButtonsInjector.getStatisticsButton());
-        add(ButtonsInjector.getCloseButton());
+        try {
+            add(ButtonsInjector.getStartGameButton());
+            add(ButtonsInjector.getStatisticsButton());
+            add(ButtonsInjector.getCloseButton());
+        } catch(NullPointerException ex) {
+            System.err.println("Wyjatek " + ex);
+        }
     }
 
     @Override
     protected void paintComponent(Graphics gs) {
-        //Graphics2D g = (Graphics2D)gs;
         gs.drawImage(ResourcesInjector.backgroundImage,
                 0, 0, null);
     }
