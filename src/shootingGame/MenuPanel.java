@@ -22,7 +22,8 @@ public class MenuPanel extends JPanel {
 
     @Override
     protected void paintComponent(Graphics gs) {
-        gs.drawImage(ResourcesInjector.backgroundImage,
+        Graphics2D g = (Graphics2D) gs;
+        g.drawImage(ResourcesInjector.backgroundImage,
                 0, 0, null);
     }
 }

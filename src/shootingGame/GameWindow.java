@@ -15,6 +15,7 @@ public class GameWindow extends JFrame {
         setLocation(xPos, yPos);
         setResizable(false);
         setUndecorated(true);
+        requestFocusInWindow();
         setVisible(true);
         add(new MenuPanel(width, height));
     }

@@ -25,7 +25,7 @@ public class StartGameButton extends JButton {
             public void mouseClicked(MouseEvent e) {
                 try {
                     InitWindow.getGameWindow().getContentPane().removeAll();
-                    InitWindow.getGameWindow().add(new GamePanel(1024, 768));
+                    InitWindow.getGameWindow().add(new GamePanel(800, 768));
                     InitWindow.getGameWindow().repaint();
                 } catch(NullPointerException ex) {
                     System.err.println("Exception at start game " + ex);

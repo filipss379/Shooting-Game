@@ -21,7 +21,7 @@ public class InitWindow {
         try {
             return gameWindow;
         } catch(NullPointerException ex) {
-            System.err.println("Wyjątek getGameWindow" + ex);
+            System.err.println("Excetpions at getGameWindow" + ex);
             return null;
         }
     }
