@@ -23,7 +23,6 @@ public class PanelsInjector {
             WindowInitializer.getGameWindow().getContentPane().removeAll();
             WindowInitializer.getGameWindow().add(gamePanel);
             WindowInitializer.getGameWindow().repaint();
-            gamePanel.startTheGame();
         } catch (NullPointerException ex) {
             System.out.println("Exception while adding game panel " + ex);
         }
