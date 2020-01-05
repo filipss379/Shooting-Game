@@ -1,4 +1,6 @@
-package shootingGame.GUIElements;
+package shootingGame.Buttons;
+
+import shootingGame.Injectors.ButtonsInjector;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
@@ -8,12 +10,12 @@ public class StatisticsButton extends JButton {
 
     private static String statisticsText  = "Statistics";
 
-    public StatisticsButton (final int xPos,
-                             final int yPos,
-                             final int width,
-                             final int height) {
-        setSize(width, height);
-        setLocation(xPos, yPos);
+    public StatisticsButton (final int X_BUTTON_POSITION,
+                             final int Y_BUTTON_POSITION,
+                             final int WIDTH,
+                             final int HEIGHT) {
+        setSize(WIDTH, HEIGHT);
+        setLocation(X_BUTTON_POSITION, Y_BUTTON_POSITION);
         setText(statisticsText);
         setVisible(true);
         setBorderPainted(false);

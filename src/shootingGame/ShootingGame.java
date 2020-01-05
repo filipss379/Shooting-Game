@@ -5,7 +5,7 @@ public class ShootingGame {
 
     public static void main(String []args) {
 
-      InitWindow initWindow = new InitWindow();
+      WindowInitializer windowInitializer = new WindowInitializer();
 
     }
 }

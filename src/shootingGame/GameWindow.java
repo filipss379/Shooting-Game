@@ -1,27 +1,21 @@
 package shootingGame;
 
-import shootingGame.GUIElements.ButtonsInjector;
+import shootingGame.Injectors.PanelsInjector;
 import javax.swing.*;
 
 public class GameWindow extends JFrame {
 
-    public GameWindow (final int xPos,
-                       final int yPos,
-                       final int width,
-                       final int height) {
+    public GameWindow (final int X_GAME_WINDOW_POSITION,
+                       final int Y_GAME_WINDOW_POSITION,
+                       final int WIDTH,
+                       final int HEIGHT) {
         super();
-        loadResources();
-        setSize(width, height);
-        setLocation(xPos, yPos);
+        setSize(WIDTH, HEIGHT);
+        setLocation(X_GAME_WINDOW_POSITION, Y_GAME_WINDOW_POSITION);
         setResizable(false);
         setUndecorated(true);
         requestFocusInWindow();
         setVisible(true);
-        add(new MenuPanel(width, height));
-    }
-
-    private void loadResources() {
-        ButtonsInjector.loadGUIComponents();
-        ResourcesInjector.loadInitialResources();
+        add(PanelsInjector.getMenuPanel());
     }
 }
