@@ -26,11 +26,9 @@ public class GamePanel extends JPanel {
         g.drawImage(ResourcesInjector.plane, GameStatusFields.xPlanePosition, GameStatusFields.Y_PLANE_POSITION, null);
         if(GameStatusFields.bombReleased)
             g.drawImage(ResourcesInjector.bomb, GameStatusFields.xBombPosition, GameStatusFields.yBombPosition, null);
-        if(GameStatusFields.bulletReleased)
+        if(GameStatusFields.isAlreadyShooting)
             g.drawImage(ResourcesInjector.bullet, GameStatusFields.xBulletPosition, GameStatusFields.yBulletPosition, null);
     }
-
-
 }
 
 

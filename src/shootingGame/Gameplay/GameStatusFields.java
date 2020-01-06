@@ -10,13 +10,12 @@ public abstract class GameStatusFields {
     protected static final int BOMB_IMAGE_HEIGHT = 45;
     protected static final int Y_BOMB_START_POSITION = 0;
     protected static final int Y_BULLET_START_POSITION = Y_PLANE_POSITION - BULLET_IMAGE_HEIGHT;
-    volatile static int xPlanePosition = (GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH) /2;
-    volatile static int yBulletPosition;
-    volatile static int xBulletPosition;
-    volatile static int xBombPosition = 200;
-    volatile static int yBombPosition = Y_BOMB_START_POSITION;
-    volatile static boolean bulletReleased = false;
-    volatile static boolean bombReleased = false;
-    volatile boolean isAlreadyShooting = false;
-    volatile boolean wasCollision = false;
+    static int xPlanePosition = (GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH) /2;
+    static int yBulletPosition;
+    static int xBulletPosition;
+    static int xBombPosition = 200;
+    static int yBombPosition = Y_BOMB_START_POSITION;
+    static boolean bulletReleased = false;
+    static boolean bombReleased = false;
+    static boolean isAlreadyShooting = false;
 }

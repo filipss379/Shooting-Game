@@ -1,14 +1,12 @@
 package shootingGame.Gameplay;
 
 import shootingGame.Injectors.PanelsInjector;
-import shootingGame.ShootingGame;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 public class GameKeyController extends GameStatusFields {
 
-    ShootingController shootingController = new ShootingController();
 
     public void initGameKeyBinding() {
         initMovingLeft();
@@ -22,10 +20,8 @@ public class GameKeyController extends GameStatusFields {
         PanelsInjector.getGamePanel().getActionMap().put("space", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               //if(!isAlreadyShooting){
-                    shootingController.doShooting();
-                  //  isAlreadyShooting = true;
-               // }
+                if(!isAlreadyShooting)
+                    bulletReleased = true;
             }
         });
     }
@@ -39,8 +35,7 @@ public class GameKeyController extends GameStatusFields {
                 if(xPlanePosition <= (0 - PLANE_IMAGE_WIDTH /2))
                     xPlanePosition = GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH /2;
                 else
-                    xPlanePosition -= 10;
-                PanelsInjector.getGamePanel().repaint();
+                    xPlanePosition -= 20;
             }
         });
     }
@@ -54,8 +49,7 @@ public class GameKeyController extends GameStatusFields {
                 if(xPlanePosition >= GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH /2)
                     xPlanePosition = -PLANE_IMAGE_WIDTH /2;
                 else
-                    xPlanePosition += 10;
-                PanelsInjector.getGamePanel().repaint();
+                    xPlanePosition += 20;
             }
         });
     }
