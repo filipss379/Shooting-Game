@@ -1,5 +1,6 @@
-package shootingGame.Gameplay;
+package shootingGame;
 
+import shootingGame.Gameplay.GameStatusFields;
 import shootingGame.Injectors.ResourcesInjector;
 
 import javax.swing.*;

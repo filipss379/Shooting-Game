@@ -4,13 +4,13 @@ import shootingGame.Injectors.PanelsInjector;
 
 public class Gameplay extends GameStatusFields {
 
-    Thread gameThread = new Thread();
+    private Thread gameThread = new Thread();
     private GameKeyController gameKeyController
             = new GameKeyController();
     private ShootingController shootingController
             = new ShootingController();
-    private CollisionController collisionController
-            = new CollisionController();
+    private HitController hitController
+            = new HitController();
 
     public Gameplay() {
         gameKeyController.initGameKeyBinding();
@@ -34,20 +34,20 @@ public class Gameplay extends GameStatusFields {
                 }
                 if(yBulletPosition < 0)
                     isAlreadyShooting = false;
-                if(collisionController.checkIfWasCollision()){
-                    collisionController.restartGameStatus();
+                if(hitController.checkIfWasHit()){
+                    ScoreCounter.addPointsToScore();
+                    hitController.restartGameStatus();
                 }
 
-                yBombPosition += 1;
-                yBulletPosition -= 3;
+                yBombPosition += DifficultyController.getBombMovingStep();
+                yBulletPosition -= DifficultyController.getBulletMovingStep();
                 try {
-                    gameThread.sleep(5);
-                } catch (InterruptedException ex) {}
+                    gameThread.sleep(DifficultyController.getRefreshFrequency());
+                } catch (InterruptedException ex) {
+
+                }
                 PanelsInjector.getGamePanel().repaint();
             }
         });
     }
-
-
-
 }

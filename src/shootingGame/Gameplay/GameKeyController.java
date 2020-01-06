@@ -32,12 +32,16 @@ public class GameKeyController extends GameStatusFields {
         PanelsInjector.getGamePanel().getActionMap().put("leftArrow", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(xPlanePosition <= (0 - PLANE_IMAGE_WIDTH /2))
-                    xPlanePosition = GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH /2;
-                else
-                    xPlanePosition -= 20;
+               movingLeft();
             }
         });
+    }
+
+    private void movingLeft() {
+        if(xPlanePosition <= (0 - PLANE_IMAGE_WIDTH /2))
+            xPlanePosition = GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH /2;
+        else
+            xPlanePosition -= DifficultyController.getPlaneMovingStep();
     }
 
     private void initMovingRight() {
@@ -46,12 +50,16 @@ public class GameKeyController extends GameStatusFields {
         PanelsInjector.getGamePanel().getActionMap().put("rightArrow", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(xPlanePosition >= GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH /2)
-                    xPlanePosition = -PLANE_IMAGE_WIDTH /2;
-                else
-                    xPlanePosition += 20;
+               movingRight();
             }
         });
+    }
+
+    private void movingRight() {
+        if(xPlanePosition >= GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH /2)
+            xPlanePosition = -PLANE_IMAGE_WIDTH /2;
+        else
+            xPlanePosition += DifficultyController.getPlaneMovingStep();
     }
 
 //    private void pauseTheGame() {

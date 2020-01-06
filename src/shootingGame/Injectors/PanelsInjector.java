@@ -1,6 +1,6 @@
 package shootingGame.Injectors;
 
-import shootingGame.Gameplay.GamePanel;
+import shootingGame.GamePanel;
 import shootingGame.MenuPanel;
 import shootingGame.WindowInitializer;
 
