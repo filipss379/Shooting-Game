@@ -5,7 +5,7 @@ import shootingGame.Injectors.PanelsInjector;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-public class GameKeyController extends GameStatusFields {
+public class GameKeyController extends GameProperties {
 
 
     public void initGameKeyBinding() {

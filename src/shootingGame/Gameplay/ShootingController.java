@@ -1,6 +1,6 @@
 package shootingGame.Gameplay;
 
-public class ShootingController extends GameStatusFields {
+public class ShootingController extends GameProperties {
 
     public void setBulletStartPosition() {
         xBulletPosition = xPlanePosition + PLANE_IMAGE_WIDTH /2;

@@ -1,8 +1,8 @@
 package shootingGame.Gameplay;
 
-public abstract class GameStatusFields {
+public abstract class GameProperties {
     public static final int Y_PLANE_POSITION = 600;
-    protected static final int GAME_WINDOW_WIDTH = 800;
+    protected static final int GAME_WINDOW_WIDTH = 1024;
     protected static final int GAME_WINDOW_HEIGHT = 768;
     protected static final int PLANE_IMAGE_WIDTH = 80;
     protected static final int BULLET_IMAGE_HEIGHT = 35;

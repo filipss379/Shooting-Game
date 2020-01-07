@@ -18,4 +18,8 @@ public class LevelCounter {
         DifficultyController.increasePlaneMovingStep();
     }
 
+    public static int getGameLevel() {
+        return gameLevel;
+    }
+
 }

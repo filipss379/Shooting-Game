@@ -2,7 +2,7 @@ package shootingGame.Gameplay;
 
 import shootingGame.Injectors.PanelsInjector;
 
-public class Gameplay extends GameStatusFields {
+public class Gameplay extends GameProperties {
 
     private Thread gameThread = new Thread();
     private GameKeyController gameKeyController
@@ -11,6 +11,8 @@ public class Gameplay extends GameStatusFields {
             = new ShootingController();
     private HitController hitController
             = new HitController();
+    private CollisionController collisionController
+            = new CollisionController();
 
     public Gameplay() {
         gameKeyController.initGameKeyBinding();
@@ -34,17 +36,16 @@ public class Gameplay extends GameStatusFields {
                 }
                 if(yBulletPosition < 0)
                     isAlreadyShooting = false;
-                if(hitController.checkIfWasHit()){
-                    ScoreCounter.addPointsToScore();
-                    hitController.restartGameStatus();
-                }
+
+                hitController.checkIfWasHit();
+                collisionController.checkIfWasCollision();
 
                 yBombPosition += DifficultyController.getBombMovingStep();
                 yBulletPosition -= DifficultyController.getBulletMovingStep();
                 try {
                     gameThread.sleep(DifficultyController.getRefreshFrequency());
                 } catch (InterruptedException ex) {
-
+                    System.out.println("Exception while sleep the  game thread" + ex);
                 }
                 PanelsInjector.getGamePanel().repaint();
             }

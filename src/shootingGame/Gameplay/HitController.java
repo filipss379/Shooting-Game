@@ -1,20 +1,14 @@
 package shootingGame.Gameplay;
 
 
-public class HitController extends GameStatusFields {
+public class HitController extends GameProperties {
 
 
-    public boolean checkIfWasHit() {
+    public void checkIfWasHit() {
         if(((xBulletPosition <= xBombPosition+BOMB_IMAGE_WIDTH) &&
             (xBulletPosition >= xBombPosition)) &&
             (yBulletPosition <= yBombPosition+BOMB_IMAGE_HEIGHT))
-            return true;
-        else
-            return false;
+            GameStatusController.restartGameStatusAfterHit();
     }
 
-    public void restartGameStatus() {
-        isAlreadyShooting = false;
-        BombMovingController.setBombStartPosition();
-    }
 }

@@ -6,8 +6,18 @@ public class ScoreCounter {
 
     public static void addPointsToScore() {
         score += 10;
-        if(score%150 == 0){
+        if(score%150==0){
             LevelCounter.incrementGameLevel();
         }
+    }
+
+    public static void subtractPointsFromScore() {
+        if(score!=0) {
+            score -= 10;
+        }
+    }
+
+    public static int getScore() {
+        return score;
     }
 }

@@ -8,14 +8,13 @@ public class PanelsInjector {
 
     private static MenuPanel menuPanel;
     private static GamePanel gamePanel;
-    private static int MENU_PANEL_WIDTH = 1024;
-    private static int GAME_PANEL_WIDTH = 800;
+    private static int PANELS_WIDTH = 1024;
     private static int PANELS_HEIGHT = 768;
 
 
     public static void initMenuPanel() {
-        menuPanel = new MenuPanel(MENU_PANEL_WIDTH, PANELS_HEIGHT);
-        gamePanel = new GamePanel(GAME_PANEL_WIDTH, PANELS_HEIGHT);
+        menuPanel = new MenuPanel(PANELS_WIDTH, PANELS_HEIGHT);
+        gamePanel = new GamePanel(PANELS_WIDTH, PANELS_HEIGHT);
     }
 
     public static void setGamePanel() {
