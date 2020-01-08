@@ -11,12 +11,6 @@ public class ScoreCounter {
         }
     }
 
-    public static void subtractPointsFromScore() {
-        if(score!=0) {
-            score -= 10;
-        }
-    }
-
     public static int getScore() {
         return score;
     }

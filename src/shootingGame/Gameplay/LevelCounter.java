@@ -5,8 +5,6 @@ public class LevelCounter {
     private static int gameLevel = 1;
 
     public static void incrementGameLevel() {
-        if(gameLevel == 5)
-            System.out.println("End of the game");
         gameLevel++;
         increaseGameDynamics();
     }
@@ -14,8 +12,8 @@ public class LevelCounter {
     private static void increaseGameDynamics() {
         DifficultyController.increaseBulletMovingStep();
         DifficultyController.increaseBombMovingStep();
-        DifficultyController.reduceRefreshFrequency();
         DifficultyController.increasePlaneMovingStep();
+        DifficultyController.reduceRefreshFrequency();
     }
 
     public static int getGameLevel() {

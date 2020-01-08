@@ -8,18 +8,11 @@ public class CollisionController extends GameProperties {
     }
 
     private boolean checkXCoordinates() {
-        if((xBombPosition+BOMB_IMAGE_HEIGHT>=xPlanePosition) &&
-           (xBombPosition<=xPlanePosition+PLANE_IMAGE_WIDTH))
-            return true;
-        else
-            return false;
+        return ((xBombPosition+BOMB_IMAGE_HEIGHT>=xPlanePosition) &&
+                (xBombPosition<=xPlanePosition+PLANE_IMAGE_WIDTH));
     }
 
     private boolean checkYCoordinates() {
-        if(yBombPosition+BOMB_IMAGE_HEIGHT >= Y_PLANE_POSITION)
-            return true;
-        else
-            return false;
+        return (yBombPosition+BOMB_IMAGE_HEIGHT >= Y_PLANE_POSITION);
     }
-
 }

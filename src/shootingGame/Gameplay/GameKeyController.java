@@ -9,68 +9,56 @@ public class GameKeyController extends GameProperties {
 
 
     public void initGameKeyBinding() {
-        initMovingLeft();
-        initMovingRight();
-        initShooting();
+        initMovingLeftKey();
+        initMovingRightKey();
+        initShootingKey();
+        pauseTheGame();
     }
 
-    private void initShooting() {
+    private void initShootingKey() {
         PanelsInjector.getGamePanel().getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
                 .put(KeyStroke.getKeyStroke("SPACE"), "space");
         PanelsInjector.getGamePanel().getActionMap().put("space", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(!isAlreadyShooting)
-                    bulletReleased = true;
+                ShootingController.releaseTheBullet();
             }
         });
     }
 
-    private void initMovingLeft() {
+    private void initMovingLeftKey() {
         PanelsInjector.getGamePanel().getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
                 .put(KeyStroke.getKeyStroke(0x25, 0), "leftArrow");
         PanelsInjector.getGamePanel().getActionMap().put("leftArrow", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               movingLeft();
+               PlaneMovingController.movingLeft();
             }
         });
     }
 
-    private void movingLeft() {
-        if(xPlanePosition <= (0 - PLANE_IMAGE_WIDTH /2))
-            xPlanePosition = GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH /2;
-        else
-            xPlanePosition -= DifficultyController.getPlaneMovingStep();
-    }
-
-    private void initMovingRight() {
+    private void initMovingRightKey() {
         PanelsInjector.getGamePanel().getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
                 .put(KeyStroke.getKeyStroke(0x27, 0), "rightArrow");
         PanelsInjector.getGamePanel().getActionMap().put("rightArrow", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               movingRight();
+               PlaneMovingController.movingRight();
             }
         });
     }
 
-    private void movingRight() {
-        if(xPlanePosition >= GAME_WINDOW_WIDTH - PLANE_IMAGE_WIDTH /2)
-            xPlanePosition = -PLANE_IMAGE_WIDTH /2;
-        else
-            xPlanePosition += DifficultyController.getPlaneMovingStep();
-    }
 
-//    private void pauseTheGame() {
-//        PanelsInjector.getGamePanel().getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
-//                .put(KeyStroke.getKeyStroke(0x1B, 0), "escape");
-//        PanelsInjector.getGamePanel().getActionMap().put("escape", new AbstractAction() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                System.out.println("ESCAPE");
-//            }
-//        });
-//    }
+    private void pauseTheGame() {
+        PanelsInjector.getGamePanel().getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
+                .put(KeyStroke.getKeyStroke(0x1B, 0), "escape");
+        PanelsInjector.getGamePanel().getActionMap().put("escape", new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("ESCAPE");
+                shouldWait = !shouldWait;
+            }
+        });
+    }
 
 }

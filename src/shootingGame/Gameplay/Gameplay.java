@@ -4,11 +4,9 @@ import shootingGame.Injectors.PanelsInjector;
 
 public class Gameplay extends GameProperties {
 
-    private Thread gameThread = new Thread();
+    private static Thread gameThread = new Thread();
     private GameKeyController gameKeyController
             = new GameKeyController();
-    private ShootingController shootingController
-            = new ShootingController();
     private HitController hitController
             = new HitController();
     private CollisionController collisionController
@@ -22,33 +20,34 @@ public class Gameplay extends GameProperties {
 
     public void initGameplay() {
        gameThread = new Thread(() -> {
-            bombReleased = true;
             while(true) {
+                if(!shouldWait){
 
-                if(yBombPosition >= GAME_WINDOW_HEIGHT) {
-                    yBombPosition = Y_BOMB_START_POSITION;
-                    BombMovingController.setBombStartPosition();
-                }
-                if(bulletReleased) {
-                    shootingController.setBulletStartPosition();
-                    isAlreadyShooting = true;
-                    bulletReleased = false;
-                }
-                if(yBulletPosition < 0)
-                    isAlreadyShooting = false;
+                    hitController.checkIfWasHit();
+                    collisionController.checkIfWasCollision();
 
-                hitController.checkIfWasHit();
-                collisionController.checkIfWasCollision();
+                    if(yBombPosition >= GAME_WINDOW_HEIGHT)
+                        BombMovingController.setBombStartPosition();
 
-                yBombPosition += DifficultyController.getBombMovingStep();
-                yBulletPosition -= DifficultyController.getBulletMovingStep();
-                try {
-                    gameThread.sleep(DifficultyController.getRefreshFrequency());
-                } catch (InterruptedException ex) {
-                    System.out.println("Exception while sleep the  game thread" + ex);
+                    if(yBulletPosition < 0)
+                        isShooting = false;
+
+                    setGameDynamics();
+                    PanelsInjector.getGamePanel().repaint();
                 }
-                PanelsInjector.getGamePanel().repaint();
             }
         });
     }
+
+    private void setGameDynamics() {
+        yBombPosition += DifficultyController.getBombMovingStep();
+        yBulletPosition -= DifficultyController.getBulletMovingStep();
+
+        try {
+            gameThread.sleep(DifficultyController.getRefreshFrequency());
+        } catch (InterruptedException ex) {
+            System.out.println("Exception while sleep the  game thread" + ex);
+        }
+    }
+
 }

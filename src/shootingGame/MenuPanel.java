@@ -29,7 +29,7 @@ public class MenuPanel extends JPanel {
     protected void paintComponent(Graphics gs) {
         Graphics2D g = (Graphics2D) gs;
         super.paintComponent(g);
-        g.drawImage(ResourcesInjector.backgroundImage,0, 0, null);
+        g.drawImage(ResourcesInjector.menuBackgroundImage,0, 0, null);
     }
 }
 

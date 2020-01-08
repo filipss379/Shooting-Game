@@ -4,7 +4,7 @@ public class DifficultyController {
 
     private static int refreshFrequency = 5;
     private static int bombMovingStep = 1;
-    private static int bulletMovingStep = 3;
+    private static float bulletMovingStep = 3;
     private static int planeMovingStep = 20;
 
     public static void increaseBombMovingStep() {
@@ -12,7 +12,7 @@ public class DifficultyController {
     }
 
     public static void increaseBulletMovingStep() {
-        bulletMovingStep += 1;
+        bulletMovingStep += 1.5;
     }
 
     public static void reduceRefreshFrequency() {
@@ -20,7 +20,7 @@ public class DifficultyController {
     }
 
     public static void increasePlaneMovingStep() {
-        planeMovingStep += 3;
+        planeMovingStep += 4;
     }
 
     public static int getRefreshFrequency() {
@@ -31,7 +31,7 @@ public class DifficultyController {
         return bombMovingStep;
     }
 
-    public static int getBulletMovingStep() {
+    public static float getBulletMovingStep() {
         return bulletMovingStep;
     }
 
