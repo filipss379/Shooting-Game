@@ -1,7 +1,7 @@
 package shootingGame.Buttons;
 
 import shootingGame.Gameplay.Gameplay;
-import shootingGame.Injectors.PanelsInjector;
+import shootingGame.Injectors.GameComponentsInjector;
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -27,7 +27,7 @@ public class StartGameButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                PanelsInjector.setGamePanel();
+                GameComponentsInjector.setGamePanel();
                 startTheGame();
             }
         });

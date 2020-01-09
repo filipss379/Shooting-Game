@@ -1,7 +1,7 @@
 package shootingGame;
 
 import shootingGame.Injectors.ButtonsInjector;
-import shootingGame.Injectors.PanelsInjector;
+import shootingGame.Injectors.GameComponentsInjector;
 import shootingGame.Injectors.ResourcesInjector;
 
 import java.awt.*;
@@ -25,7 +25,7 @@ public class WindowInitializer {
     private void loadResources() {
         ResourcesInjector.loadInitialResources();
         ButtonsInjector.loadGUIComponents();
-        PanelsInjector.initMenuPanel();
+        GameComponentsInjector.initMenuPanel();
     }
 
     public static GameWindow getGameWindow() {

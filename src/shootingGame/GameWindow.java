@@ -1,6 +1,6 @@
 package shootingGame;
 
-import shootingGame.Injectors.PanelsInjector;
+import shootingGame.Injectors.GameComponentsInjector;
 import javax.swing.*;
 
 public class GameWindow extends JFrame {
@@ -16,6 +16,6 @@ public class GameWindow extends JFrame {
         setUndecorated(true);
         requestFocusInWindow();
         setVisible(true);
-        add(PanelsInjector.getMenuPanel());
+        add(GameComponentsInjector.getMenuPanel());
     }
 }

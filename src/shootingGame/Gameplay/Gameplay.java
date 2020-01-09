@@ -1,6 +1,6 @@
 package shootingGame.Gameplay;
 
-import shootingGame.Injectors.PanelsInjector;
+import shootingGame.Injectors.GameComponentsInjector;
 
 public class Gameplay extends GameProperties {
 
@@ -21,8 +21,7 @@ public class Gameplay extends GameProperties {
     public void initGameplay() {
        gameThread = new Thread(() -> {
             while(true) {
-                if(!shouldWait){
-
+                if(!shouldWait) {
                     hitController.checkIfWasHit();
                     collisionController.checkIfWasCollision();
 
@@ -33,7 +32,7 @@ public class Gameplay extends GameProperties {
                         isShooting = false;
 
                     setGameDynamics();
-                    PanelsInjector.getGamePanel().repaint();
+                    GameComponentsInjector.getGamePanel().repaint();
                 }
             }
         });
@@ -49,5 +48,4 @@ public class Gameplay extends GameProperties {
             System.out.println("Exception while sleep the  game thread" + ex);
         }
     }
-
 }

@@ -29,8 +29,9 @@ public class GamePanel extends JPanel {
             GAME_LEVEL_Y_POSITION = 30;
             setSize(WIDTH, HEIGHT);
             setLocation(0,0);
-            setVisible(true);
+            setLayout(new CardLayout());
             setBackground(GAME_BACKGROUND_COLOR);
+            setVisible(true);
     }
 
     @Override
