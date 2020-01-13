@@ -41,7 +41,6 @@ public class Gameplay extends GameProperties {
     private void setGameDynamics() {
         yBombPosition += DifficultyController.getBombMovingStep();
         yBulletPosition -= DifficultyController.getBulletMovingStep();
-
         try {
             gameThread.sleep(DifficultyController.getRefreshFrequency());
         } catch (InterruptedException ex) {

@@ -1,5 +1,6 @@
 package shootingGame;
 
+import shootingGame.GameComponents.GameWindow;
 import shootingGame.Injectors.ButtonsInjector;
 import shootingGame.Injectors.GameComponentsInjector;
 import shootingGame.Injectors.ResourcesInjector;

@@ -38,6 +38,4 @@ public class DifficultyController {
     public static int getPlaneMovingStep() {
         return planeMovingStep;
     }
-
-
 }

@@ -1,4 +1,4 @@
-package shootingGame;
+package shootingGame.GameComponents;
 
 import shootingGame.Gameplay.GameProperties;
 import shootingGame.Gameplay.GameStatusController;

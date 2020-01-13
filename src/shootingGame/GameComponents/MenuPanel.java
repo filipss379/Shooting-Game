@@ -1,4 +1,4 @@
-package shootingGame;
+package shootingGame.GameComponents;
 
 import shootingGame.Injectors.ButtonsInjector;
 import shootingGame.Injectors.ResourcesInjector;

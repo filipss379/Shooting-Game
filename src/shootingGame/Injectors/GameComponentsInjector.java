@@ -1,15 +1,15 @@
 package shootingGame.Injectors;
 
-import shootingGame.GamePanel;
-import shootingGame.MenuPanel;
-import shootingGame.LeavingMessage;
+import shootingGame.GameComponents.GamePanel;
+import shootingGame.GameComponents.MenuPanel;
+import shootingGame.GameComponents.Message;
 import shootingGame.WindowInitializer;
 
 public class GameComponentsInjector {
 
     private static MenuPanel menuPanel;
     private static GamePanel gamePanel;
-    private static LeavingMessage leavingMessage;
+    private static Message message;
     private static int PANELS_WIDTH = 1024;
     private static int PANELS_HEIGHT = 768;
     private static int LEAVING_MESSAGE_WIDTH = 500;
@@ -18,7 +18,7 @@ public class GameComponentsInjector {
     public static void initMenuPanel() {
         menuPanel = new MenuPanel(PANELS_WIDTH, PANELS_HEIGHT);
         gamePanel = new GamePanel(PANELS_WIDTH, PANELS_HEIGHT);
-        leavingMessage = new LeavingMessage(LEAVING_MESSAGE_WIDTH, LEAVING_MESSAGE_HEIGHT);
+        message = new Message(LEAVING_MESSAGE_WIDTH, LEAVING_MESSAGE_HEIGHT);
     }
 
     public static void setGamePanel() {
@@ -41,17 +41,32 @@ public class GameComponentsInjector {
         }
     }
 
-    public static void setLeavingMessage() {
+    public static void setLeaveMessage() {
         try {
-            leavingMessage.setVisible(true);
+            message.setButtons("Pause");
+            message.setEndInfoText();
+            message.setVisible(true);
         } catch(NullPointerException ex) {
             System.out.println("Exception while adding popup panel " + ex);
         }
     }
 
-    public static void removeLeavingMessage() {
+    public static void setStartMessage() {
         try {
-            leavingMessage.setVisible(false);
+            message.setButtons("Start");
+            message.setActionInfoText();
+            message.setVisible(true);
+        } catch(NullPointerException ex) {
+            System.out.println("Exception while adding popup panel " + ex);
+        }
+    }
+
+    public static void removeMessage() {
+        try {
+            message.remove(ButtonsInjector.getOKButton());
+            message.remove(ButtonsInjector.getReturnToMenuButton());
+            message.remove(ButtonsInjector.getReturnToGameButton());
+            message.setVisible(false);
         } catch (NullPointerException ex) {
             System.out.println("Exception while setting visible of JDialog to false" + ex);
         }

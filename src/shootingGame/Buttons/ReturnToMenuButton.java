@@ -25,7 +25,7 @@ public class ReturnToMenuButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                GameComponentsInjector.removeLeavingMessage();
+                GameComponentsInjector.removeMessage();
                 GameComponentsInjector.setMenuPanel();
             }
         });

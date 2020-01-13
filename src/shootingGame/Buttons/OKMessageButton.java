@@ -1,34 +1,36 @@
 package shootingGame.Buttons;
 
-import shootingGame.Gameplay.GameProperties;
+import shootingGame.Gameplay.Gameplay;
 import shootingGame.Injectors.GameComponentsInjector;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class ReturnToGameButton extends JButton {
+public class OKMessageButton extends JButton {
 
-    private static final String BUTTON_TEXT = "Return To Game";
+    private static final String BUTTON_TEXT = "OK";
+    private static Gameplay gameplay;
 
-    public ReturnToGameButton(final int X_BUTTON_POSITION,
-                              final int Y_BUTTON_POSITION,
-                              final int WIDTH,
-                              final int HEIGHT) {
+    public OKMessageButton(final int X_BUTTON_POSITION,
+                           final int Y_BUTTON_POSITION,
+                           final int WIDTH,
+                           final int HEIGHT) {
         setSize(WIDTH, HEIGHT);
         setLocation(X_BUTTON_POSITION, Y_BUTTON_POSITION);
         setText(BUTTON_TEXT);
         setVisible(true);
         setBorderPainted(false);
-        returnToGame();
+        SaveTheScoreAndReturn();
     }
 
-    private void returnToGame() {
+    private void SaveTheScoreAndReturn() {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 GameComponentsInjector.removeMessage();
-                GameProperties.shouldWait = false;            }
+                gameplay = new Gameplay();
+            }
         });
     }
 }

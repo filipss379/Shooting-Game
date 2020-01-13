@@ -1,6 +1,5 @@
 package shootingGame.Buttons;
 
-import shootingGame.Gameplay.Gameplay;
 import shootingGame.Injectors.GameComponentsInjector;
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
@@ -9,7 +8,6 @@ import java.awt.event.MouseEvent;
 public class StartGameButton extends JButton {
 
     private static final String BUTTON_TEXT = "Start Game";
-    private Gameplay gameplay;
 
     public StartGameButton (final int X_BUTTON_POSITION,
                             final int Y_BUTTON_POSITION,
@@ -34,6 +32,7 @@ public class StartGameButton extends JButton {
     }
 
     private void startTheGame() {
-        gameplay = new Gameplay();
+        GameComponentsInjector.setGamePanel();
+        GameComponentsInjector.setStartMessage();
     }
 }

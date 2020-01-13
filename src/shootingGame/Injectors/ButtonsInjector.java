@@ -12,7 +12,7 @@ public class ButtonsInjector implements ButtonsValues {
     private static JButton[] buttons;
 
     public static void loadGUIComponents() {
-        buttons = new JButton[5];
+        buttons = new JButton[6];
         buttons[0] = new CloseButton(
                 MENU_BUTTON_X_POSITION, CLOSE_BUTTON_Y_POSITION, MENU_BUTTON_WIDTH, MENU_BUTTON_HEIGHT);
         buttons[1] = new StatisticsButton(
@@ -20,9 +20,11 @@ public class ButtonsInjector implements ButtonsValues {
         buttons[2] = new StartGameButton(
                 MENU_BUTTON_X_POSITION, START_BUTTON_Y_POSITION, MENU_BUTTON_WIDTH, MENU_BUTTON_HEIGHT);
         buttons[3] = new ReturnToGameButton(
-                RETURN_TO_GAME_BUTTON_X_POSITION, LEAVING_MESSAGE_BUTTON_Y_POSITION, LEAVING_MESSAGE_BUTTON_WIDTH, LEAVING_MESSAGE_BUTTON_HEIGHT);
+                RETURN_TO_GAME_BUTTON_X_POSITION, MESSAGE_BUTTON_Y_POSITION, MESSAGE_BUTTON_WIDTH, MESSAGE_BUTTON_HEIGHT);
         buttons[4] = new ReturnToMenuButton(
-                RETURN_TO_MENU_BUTTON_X_POSITION, LEAVING_MESSAGE_BUTTON_Y_POSITION, LEAVING_MESSAGE_BUTTON_WIDTH, LEAVING_MESSAGE_BUTTON_HEIGHT);
+                RETURN_TO_MENU_BUTTON_X_POSITION, MESSAGE_BUTTON_Y_POSITION, MESSAGE_BUTTON_WIDTH, MESSAGE_BUTTON_HEIGHT);
+        buttons[5] = new OKMessageButton(
+                OK_BUTTON_X_POSITION, MESSAGE_BUTTON_Y_POSITION, MESSAGE_BUTTON_WIDTH, MESSAGE_BUTTON_HEIGHT);
         setCommonValues();
     }
 
@@ -72,5 +74,9 @@ public class ButtonsInjector implements ButtonsValues {
 
     public static JButton getReturnToMenuButton() {
         return buttons[4];
+    }
+
+    public static JButton getOKButton() {
+        return buttons[5];
     }
 }
