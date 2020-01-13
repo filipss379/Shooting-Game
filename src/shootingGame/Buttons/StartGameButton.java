@@ -8,7 +8,7 @@ import java.awt.event.MouseEvent;
 
 public class StartGameButton extends JButton {
 
-    private static String BUTTON_TEXT = "Start Game";
+    private static final String BUTTON_TEXT = "Start Game";
     private Gameplay gameplay;
 
     public StartGameButton (final int X_BUTTON_POSITION,

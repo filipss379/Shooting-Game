@@ -28,7 +28,7 @@ public class Gameplay extends GameProperties {
                     if(yBombPosition >= GAME_WINDOW_HEIGHT)
                         BombMovingController.setBombStartPosition();
 
-                    if(yBulletPosition < 0)
+                    if(isShooting && yBulletPosition < 0)
                         isShooting = false;
 
                     setGameDynamics();

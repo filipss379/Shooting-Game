@@ -8,7 +8,7 @@ import java.awt.event.MouseEvent;
 
 public class StatisticsButton extends JButton {
 
-    private static String statisticsText  = "Statistics";
+    private static final String BUTTON_TEXT = "Statistics";
 
     public StatisticsButton (final int X_BUTTON_POSITION,
                              final int Y_BUTTON_POSITION,
@@ -16,10 +16,13 @@ public class StatisticsButton extends JButton {
                              final int HEIGHT) {
         setSize(WIDTH, HEIGHT);
         setLocation(X_BUTTON_POSITION, Y_BUTTON_POSITION);
-        setText(statisticsText);
+        setText(BUTTON_TEXT);
         setVisible(true);
         setBorderPainted(false);
+        showStatistics();
+    }
 
+    private void showStatistics() {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {

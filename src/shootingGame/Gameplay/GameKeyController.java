@@ -56,7 +56,7 @@ public class GameKeyController extends GameProperties {
             @Override
             public void actionPerformed(ActionEvent e) {
                 shouldWait = true;
-                GameComponentsInjector.setPopupPanel();
+                GameComponentsInjector.setLeavingMessage();
             }
         });
     }

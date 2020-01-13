@@ -31,7 +31,17 @@ public class GameComponentsInjector {
         }
     }
 
-    public static void setPopupPanel() {
+    public static void setMenuPanel() {
+        try {
+            WindowInitializer.getGameWindow().getContentPane().removeAll();
+            WindowInitializer.getGameWindow().add(menuPanel);
+            WindowInitializer.getGameWindow().repaint();
+        } catch (NullPointerException ex) {
+            System.out.println("Exception while adding game panel " + ex);
+        }
+    }
+
+    public static void setLeavingMessage() {
         try {
             leavingMessage.setVisible(true);
         } catch(NullPointerException ex) {
@@ -39,6 +49,13 @@ public class GameComponentsInjector {
         }
     }
 
+    public static void removeLeavingMessage() {
+        try {
+            leavingMessage.setVisible(false);
+        } catch (NullPointerException ex) {
+            System.out.println("Exception while setting visible of JDialog to false" + ex);
+        }
+    }
 
     public static MenuPanel getMenuPanel() {
         return menuPanel;
@@ -47,4 +64,5 @@ public class GameComponentsInjector {
     public static GamePanel getGamePanel() {
         return gamePanel;
     }
+
 }
