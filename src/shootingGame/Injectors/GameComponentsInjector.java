@@ -41,10 +41,18 @@ public class GameComponentsInjector {
         }
     }
 
+    public static void setEndTheGameMessage() {
+        try {
+            message.setMessageComponents("End");
+            message.setVisible(true);
+        } catch(NullPointerException ex) {
+            System.out.println("Exception while adding popup panel " + ex);
+        }
+    }
+
     public static void setLeaveMessage() {
         try {
-            message.setButtons("Pause");
-            message.setEndInfoText();
+            message.setMessageComponents("Pause");
             message.setVisible(true);
         } catch(NullPointerException ex) {
             System.out.println("Exception while adding popup panel " + ex);
@@ -53,8 +61,7 @@ public class GameComponentsInjector {
 
     public static void setStartMessage() {
         try {
-            message.setButtons("Start");
-            message.setActionInfoText();
+            message.setMessageComponents("Start");
             message.setVisible(true);
         } catch(NullPointerException ex) {
             System.out.println("Exception while adding popup panel " + ex);

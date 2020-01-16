@@ -7,19 +7,10 @@ public class DifficultyController {
     private static float bulletMovingStep = 3;
     private static int planeMovingStep = 20;
 
-    public static void increaseBombMovingStep() {
+    public static void increaseGameDifficulty() {
         bombMovingStep += 1;
-    }
-
-    public static void increaseBulletMovingStep() {
         bulletMovingStep += 1.5;
-    }
-
-    public static void reduceRefreshFrequency() {
         refreshFrequency += 2;
-    }
-
-    public static void increasePlaneMovingStep() {
         planeMovingStep += 4;
     }
 
@@ -37,5 +28,12 @@ public class DifficultyController {
 
     public static int getPlaneMovingStep() {
         return planeMovingStep;
+    }
+
+    public static void restartGameDifficulty() {
+        refreshFrequency = 5;
+        bombMovingStep = 1;
+        bulletMovingStep = 3;
+        planeMovingStep = 20;
     }
 }

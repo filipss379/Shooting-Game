@@ -16,6 +16,7 @@ public abstract class GameProperties {
     public volatile static int xBombPosition = 200;
     public volatile static int yBombPosition = Y_BOMB_START_POSITION;
     public volatile static boolean isShooting = false;
-    public volatile static boolean shouldWait = false;
+    public volatile static boolean shouldWait = true;
     protected volatile static boolean bulletReleased = false;
+    public static boolean isThreadInitilized = false;
 }

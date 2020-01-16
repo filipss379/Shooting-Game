@@ -6,18 +6,14 @@ public class LevelCounter {
 
     public static void incrementGameLevel() {
         gameLevel++;
-        increaseGameDynamics();
-    }
-
-    private static void increaseGameDynamics() {
-        DifficultyController.increaseBulletMovingStep();
-        DifficultyController.increaseBombMovingStep();
-        DifficultyController.increasePlaneMovingStep();
-        DifficultyController.reduceRefreshFrequency();
+        DifficultyController.increaseGameDifficulty();
     }
 
     public static int getGameLevel() {
         return gameLevel;
     }
 
+    public static void restartLevel() {
+        gameLevel = 3;
+    }
 }

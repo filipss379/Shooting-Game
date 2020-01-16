@@ -14,4 +14,8 @@ public class ScoreCounter {
     public static int getScore() {
         return score;
     }
+
+    public static void restartScore() {
+        score = 0;
+    }
 }

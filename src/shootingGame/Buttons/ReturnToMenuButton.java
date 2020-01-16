@@ -1,5 +1,6 @@
 package shootingGame.Buttons;
 
+import shootingGame.Gameplay.EndGameController;
 import shootingGame.Injectors.GameComponentsInjector;
 
 import javax.swing.*;
@@ -25,8 +26,7 @@ public class ReturnToMenuButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                GameComponentsInjector.removeMessage();
-                GameComponentsInjector.setMenuPanel();
+                EndGameController.leaveTheGame();
             }
         });
     }

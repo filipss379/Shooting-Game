@@ -55,7 +55,7 @@ public class GameKeyController extends GameProperties {
         GameComponentsInjector.getGamePanel().getActionMap().put("escape", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                shouldWait = true;
+                GameStatusController.stopTheGame();
                 GameComponentsInjector.setLeaveMessage();
             }
         });

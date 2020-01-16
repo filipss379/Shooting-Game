@@ -1,6 +1,6 @@
 package shootingGame.Buttons;
 
-import shootingGame.Gameplay.GameProperties;
+import shootingGame.Gameplay.GameStatusController;
 import shootingGame.Injectors.GameComponentsInjector;
 
 import javax.swing.*;
@@ -28,7 +28,8 @@ public class ReturnToGameButton extends JButton {
             @Override
             public void mouseClicked(MouseEvent e) {
                 GameComponentsInjector.removeMessage();
-                GameProperties.shouldWait = false;            }
+                GameStatusController.resumeTheGame();
+            }
         });
     }
 }

@@ -2,7 +2,6 @@ package shootingGame.Injectors;
 
 import java.awt.*;
 
-
 interface ButtonsValues {
     Color BACKGROUND_NO_ACTION_COLOR = new Color(0, 0 ,0);
     Color BACKGROUND_MOUSE_ENTERED_COLOR = new Color(51, 51 ,51);

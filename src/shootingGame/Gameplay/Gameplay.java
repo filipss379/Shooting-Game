@@ -16,6 +16,7 @@ public class Gameplay extends GameProperties {
         gameKeyController.initGameKeyBinding();
         initGameplay();
         gameThread.start();
+        isThreadInitilized = true;
     }
 
     public void initGameplay() {

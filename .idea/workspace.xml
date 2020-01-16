@@ -2,38 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb3ee50-58bc-424c-861c-9a63c005050a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shootingGame/Buttons/OKMessageButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shootingGame/Gameplay/EndGameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/ReturnToGameButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/ReturnToGameButton$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/ReturnToMenuButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/ReturnToMenuButton$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/StartGameButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/StartGameButton$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/StartGameButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/StartGameButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/GamePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/GameWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Gameplay/GameKeyController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Gameplay/GameKeyController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Gameplay/GameKeyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Gameplay/GameKeyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Gameplay/Gameplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Gameplay/Gameplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Injectors/ButtonsInjector$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Injectors/ButtonsInjector$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Injectors/ButtonsInjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Injectors/ButtonsInjector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/ReturnToMenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Buttons/ReturnToMenuButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/GameComponents/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/GameComponents/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Gameplay/GameProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Gameplay/GameProperties.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Injectors/ButtonsValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Injectors/ButtonsValues.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Injectors/GameComponentsInjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/Injectors/GameComponentsInjector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/LeavingMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/MenuPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/WindowInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooting Game/shootingGame/WindowInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shootingGame/Buttons/OKMessageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Buttons/OKMessageButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToGameButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToGameButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToMenuButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToMenuButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shootingGame/Buttons/StartGameButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Buttons/StartGameButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shootingGame/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/GameComponents/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shootingGame/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/GameComponents/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shootingGame/GameComponents/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/GameComponents/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shootingGame/Gameplay/DifficultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Gameplay/DifficultyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shootingGame/Gameplay/GameKeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Gameplay/GameKeyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shootingGame/Gameplay/GameProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Gameplay/GameProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shootingGame/Gameplay/GameStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Gameplay/GameStatusController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shootingGame/Gameplay/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Gameplay/Gameplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsInjector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shootingGame/Gameplay/LevelCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Gameplay/LevelCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shootingGame/Gameplay/ScoreCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Gameplay/ScoreCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsValues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shootingGame/Injectors/GameComponentsInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/Injectors/GameComponentsInjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shootingGame/LeavingMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/GameComponents/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shootingGame/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/GameComponents/MenuPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shootingGame/WindowInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shootingGame/WindowInitializer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,15 +37,33 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/Message.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="699">
-                    <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+                  <state relative-caret-position="528">
+                    <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
                     <folding>
                       <element signature="imports" expanded="true" />
                     </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameProperties.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="380">
+                    <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/Gameplay.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="361">
+                    <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
                   </state>
                 </provider>
               </entry>
@@ -70,73 +76,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/OKMessageButton.java">
+        <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/EndGameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#794#1024#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsInjector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1007">
-              <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2709#2710#0" expanded="true" />
-                <element signature="e#2742#2743#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsValues.java">
+        <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameStatusController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/GameComponentsInjector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1273">
-              <caret line="67" column="68" selection-start-line="67" selection-start-column="68" selection-end-line="67" selection-end-column="68" />
+            <state relative-caret-position="573">
+              <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#1191#1192#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/StatisticsButton.java">
+        <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToMenuButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="368">
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/CloseButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#801#970#0" expanded="true" />
+                <element signature="e#969#970#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/shootingGame/InitWindow.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/WindowInitializer.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/GUIElements/StartGameButton.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/MenuPanel.java" />
@@ -179,10 +147,7 @@
         <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/GamePanel.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/GameStatusFields.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/CollistionController.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/ScoreCounter.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/GameStatusController.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/BombMovingController.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/LevelCounter.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Injectors/ResourcesInjector.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/PlaneMovingController.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/CollisionController.java" />
@@ -191,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/shootingGame/PopupPanel.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/leavingMessage.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Injectors/PanelsInjector.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/GameKeyController.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/ShootingController.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/GamePanel.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Buttons/CloseTheGameButton.java" />
@@ -200,22 +164,27 @@
         <option value="$PROJECT_DIR$/src/shootingGame/Buttons/StatisticsButton.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Buttons/CloseButton.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/LeavingMessage.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToMenuButton.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/GameProperties.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToGameButton.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/HitController.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/Gameplay.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/DifficultyController.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Buttons/OKWelcomeMessageButton.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/GameComponents/WelcomeMessage.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/GameComponents/MessageComponents/MessageInfoLabel.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/GameComponents/LeavingMessage.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Buttons/StartGameButton.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Buttons/OKMessageButton.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsInjector.java" />
-        <option value="$PROJECT_DIR$/src/shootingGame/Injectors/GameComponentsInjector.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsValues.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/GameProperties.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/ScoreCounter.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/LevelCounter.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/DifficultyController.java" />
         <option value="$PROJECT_DIR$/src/shootingGame/GameComponents/Message.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Injectors/GameComponentsInjector.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToMenuButton.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/Gameplay.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Buttons/OKMessageButton.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToGameButton.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/EndGameController.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/GameKeyController.java" />
+        <option value="$PROJECT_DIR$/src/shootingGame/Gameplay/GameStatusController.java" />
       </list>
     </option>
   </component>
@@ -226,10 +195,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -237,8 +205,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,10 +322,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="782" height="838" extended-state="0" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3365651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24410541" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -366,12 +334,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09348442" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09025788" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2266289" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3281471" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -385,7 +353,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19664429" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.147651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -394,14 +362,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07082153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3243626" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.09065156" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2266289" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3281471" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -545,17 +513,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/klasa.java" />
     <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameInitializer.java" />
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/ResourcesInjector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#loadInitialResources#0;class#ResourcesInjector#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shootingGame/ShootingGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -563,77 +520,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/PlaneMovingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shootingGame/LeaveTheGamePopup.java" />
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/LevelCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/ShootingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameKeyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#623#803#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/ScoreCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameStatusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToGameButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/GamePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/MenuPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -664,46 +551,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/HitController.java">
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/MessageComponents/MessageInfoLabel.java" />
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/WelcomeMessage.java" />
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsValues.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/Gameplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/BombMovingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="38" selection-start-line="18" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/CollisionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -727,125 +580,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/DifficultyController.java">
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/GamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/MessageComponents/MessageInfoLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/WelcomeMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        <state relative-caret-position="166">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToMenuButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#753#983#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/StartGameButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#834#1040#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToGameButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/OKMessageButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#794#1024#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsInjector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+        <state relative-caret-position="456">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
-            <element signature="e#2742#2743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/ResourcesInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/GameComponentsInjector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="67" column="68" selection-start-line="67" selection-start-column="68" selection-end-line="67" selection-end-column="68" />
+        <state relative-caret-position="247">
+          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shootingGame/Injectors/ButtonsValues.java">
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/Gameplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="361">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToGameButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#1088#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/OKMessageButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/StartGameButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/BombMovingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameKeyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/ScoreCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/ShootingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/PlaneMovingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/LevelCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/HitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/DifficultyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="method#increaseGameDifficulty#0;class#DifficultyController#0" />
+            <element signature="method#restartGameDifficulty#0;class#DifficultyController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/CollisionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Buttons/ReturnToMenuButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#801#970#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/EndGameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shootingGame/Gameplay/GameStatusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+          <folding>
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shootingGame/GameComponents/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        <state relative-caret-position="528">
+          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

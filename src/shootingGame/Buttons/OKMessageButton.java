@@ -1,5 +1,7 @@
 package shootingGame.Buttons;
 
+import shootingGame.Gameplay.GameProperties;
+import shootingGame.Gameplay.GameStatusController;
 import shootingGame.Gameplay.Gameplay;
 import shootingGame.Injectors.GameComponentsInjector;
 
@@ -21,16 +23,22 @@ public class OKMessageButton extends JButton {
         setText(BUTTON_TEXT);
         setVisible(true);
         setBorderPainted(false);
-        SaveTheScoreAndReturn();
+        setClickAction();
     }
 
-    private void SaveTheScoreAndReturn() {
+    private void setClickAction() {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 GameComponentsInjector.removeMessage();
-                gameplay = new Gameplay();
+                startTheGame();
             }
         });
+    }
+
+    private void startTheGame() {
+        if(!GameProperties.isThreadInitilized)
+            gameplay = new Gameplay();
+        GameStatusController.startTheGame();
     }
 }
