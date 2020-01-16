@@ -37,7 +37,7 @@ public class OKMessageButton extends JButton {
     }
 
     private void startTheGame() {
-        if(!GameProperties.isThreadInitilized)
+        if(!GameProperties.isThreadInitialized)
             gameplay = new Gameplay();
         GameStatusController.startTheGame();
     }

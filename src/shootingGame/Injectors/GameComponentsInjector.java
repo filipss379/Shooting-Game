@@ -12,13 +12,13 @@ public class GameComponentsInjector {
     private static Message message;
     private static int PANELS_WIDTH = 1024;
     private static int PANELS_HEIGHT = 768;
-    private static int LEAVING_MESSAGE_WIDTH = 500;
-    private static int LEAVING_MESSAGE_HEIGHT = 300;
+    private static int MESSAGE_WIDTH = 500;
+    private static int MESSAGE_HEIGHT = 300;
 
     public static void initMenuPanel() {
         menuPanel = new MenuPanel(PANELS_WIDTH, PANELS_HEIGHT);
         gamePanel = new GamePanel(PANELS_WIDTH, PANELS_HEIGHT);
-        message = new Message(LEAVING_MESSAGE_WIDTH, LEAVING_MESSAGE_HEIGHT);
+        message = new Message(MESSAGE_WIDTH, MESSAGE_HEIGHT);
     }
 
     public static void setGamePanel() {
@@ -73,6 +73,7 @@ public class GameComponentsInjector {
             message.remove(ButtonsInjector.getOKButton());
             message.remove(ButtonsInjector.getReturnToMenuButton());
             message.remove(ButtonsInjector.getReturnToGameButton());
+            message.remove(message.getPlayerName());
             message.setVisible(false);
         } catch (NullPointerException ex) {
             System.out.println("Exception while setting visible of JDialog to false" + ex);

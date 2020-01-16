@@ -12,6 +12,7 @@ public class Message extends JDialog {
 
     private static final Color BACKGROUND_COLOR = new Color(130, 130, 130);
     private static final JLabel infoText = new JLabel();
+    private static final JTextField playerName = new JTextField();
 
     public Message(final int WIDTH,
                    final int HEIGHT) {
@@ -22,6 +23,7 @@ public class Message extends JDialog {
         setLayout(null);
         add(infoText);
         setInfoTextProperties();
+        setPlayerNameProperties();
         setVisible(false);
     }
 
@@ -29,6 +31,7 @@ public class Message extends JDialog {
         switch (action) {
             case "Start" : {
                 setActionInfoText();
+                add(playerName);
                 add(ButtonsInjector.getOKButton());
                 break;
             }
@@ -65,13 +68,25 @@ public class Message extends JDialog {
                 + secondLine + "</p></html>");
     }
 
+    private void setPlayerNameProperties() {
+        playerName.setColumns(15);
+        playerName.setSize(250, 35);
+        playerName.setLocation(125, 150);
+        playerName.setBackground(new Color(255, 255, 255));
+        playerName.setVisible(true);
+    }
+
     private void setInfoTextProperties() {
-        infoText.setSize(380, 150);
+        infoText.setSize(380, 100);
         infoText.setLocation(60, 15);
         infoText.setFont(new Font("Italic", Font.BOLD, 20));
         infoText.setBackground(BACKGROUND_COLOR);
         infoText.setForeground(new Color(35, 35, 35));
         infoText.setBorder(null);
         infoText.setVisible(true);
+    }
+
+    public static JTextField getPlayerName() {
+        return playerName;
     }
 }

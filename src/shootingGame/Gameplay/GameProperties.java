@@ -18,5 +18,6 @@ public abstract class GameProperties {
     public volatile static boolean isShooting = false;
     public volatile static boolean shouldWait = true;
     protected volatile static boolean bulletReleased = false;
-    public static boolean isThreadInitilized = false;
+    public static boolean isThreadInitialized = false;
+    public static String playerName = "";
 }
