@@ -1,6 +1,7 @@
 package shootingGame.Buttons;
 
-import shootingGame.Injectors.ButtonsInjector;
+import shootingGame.Injectors.GameComponentsInjector;
+import shootingGame.Statistics.StatisticsController;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
@@ -26,10 +27,13 @@ public class StatisticsButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                setVisible(false);
-                ButtonsInjector.getStartGameButton().setVisible(false);
-                ButtonsInjector.getCloseButton().setVisible(false);
+                setStatisticsPane();
             }
         });
+    }
+
+    private void setStatisticsPane() {
+        GameComponentsInjector.setStatisticsLabel();
+        StatisticsController.showStatistics();
     }
 }

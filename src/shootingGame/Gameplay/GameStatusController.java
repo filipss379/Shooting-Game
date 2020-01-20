@@ -1,6 +1,5 @@
 package shootingGame.Gameplay;
 
-import shootingGame.GameComponents.Message;
 import shootingGame.Injectors.GameComponentsInjector;
 
 public class GameStatusController extends GameProperties {
@@ -8,9 +7,9 @@ public class GameStatusController extends GameProperties {
     private static int livesLeft = 3;
 
     public static void startTheGame() {
-        playerName = Message.getPlayerName().getText();
-        System.out.println(playerName);
         shouldWait = false;
+        BombMovingController.setBombStartPosition();
+
     }
 
     public static void resumeTheGame() {
@@ -48,6 +47,6 @@ public class GameStatusController extends GameProperties {
     }
 
     public static void restartLivesLeft() {
-        livesLeft = 0;
+        livesLeft = 3;
     }
 }

@@ -1,7 +1,7 @@
 package shootingGame.Buttons;
 
 import shootingGame.Gameplay.EndGameController;
-import shootingGame.Injectors.GameComponentsInjector;
+import shootingGame.Statistics.StatisticsController;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -26,6 +26,7 @@ public class ReturnToMenuButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                StatisticsController.saveNewStatistics();
                 EndGameController.leaveTheGame();
             }
         });

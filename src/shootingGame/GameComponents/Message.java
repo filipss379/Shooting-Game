@@ -10,9 +10,9 @@ import java.awt.*;
 
 public class Message extends JDialog {
 
-    private static final Color BACKGROUND_COLOR = new Color(130, 130, 130);
-    private static final JLabel infoText = new JLabel();
-    private static final JTextField playerName = new JTextField();
+    private final Color BACKGROUND_COLOR = new Color(130, 130, 130);
+    private final JLabel infoText = new JLabel();
+    private final JTextField playerName = new JTextField();
 
     public Message(final int WIDTH,
                    final int HEIGHT) {
@@ -86,7 +86,11 @@ public class Message extends JDialog {
         infoText.setVisible(true);
     }
 
-    public static JTextField getPlayerName() {
+    public JTextField getPlayerName() {
         return playerName;
+    }
+
+    public void clearPlayerNameField() {
+        playerName.setText("");
     }
 }

@@ -16,6 +16,6 @@ public class EndGameController extends GameProperties {
         LevelCounter.restartLevel();
         ScoreCounter.restartScore();
         DifficultyController.restartGameDifficulty();
-        BombMovingController.setBombStartPosition();
+        GameComponentsInjector.getMessage().clearPlayerNameField();
     }
 }

@@ -26,7 +26,7 @@ public class WindowInitializer {
     private void loadResources() {
         ResourcesInjector.loadInitialResources();
         ButtonsInjector.loadGUIComponents();
-        GameComponentsInjector.initMenuPanel();
+        GameComponentsInjector.initGameComponents();
     }
 
     public static GameWindow getGameWindow() {

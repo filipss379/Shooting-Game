@@ -4,6 +4,7 @@ import shootingGame.Gameplay.GameProperties;
 import shootingGame.Gameplay.GameStatusController;
 import shootingGame.Gameplay.Gameplay;
 import shootingGame.Injectors.GameComponentsInjector;
+import shootingGame.Statistics.PlayerNameController;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
@@ -12,7 +13,7 @@ import java.awt.event.MouseEvent;
 public class OKMessageButton extends JButton {
 
     private static final String BUTTON_TEXT = "OK";
-    private static Gameplay gameplay;
+    private Gameplay gameplay;
 
     public OKMessageButton(final int X_BUTTON_POSITION,
                            final int Y_BUTTON_POSITION,
@@ -30,15 +31,27 @@ public class OKMessageButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                GameComponentsInjector.removeMessage();
-                startTheGame();
+                setPlayerName();
+                if(setPlayerName())
+                    startTheGame();
             }
         });
     }
 
+    private boolean setPlayerName() {
+        String playerName = GameComponentsInjector.getMessage().getPlayerName().getText();
+        if(playerName.length()>=1 && !playerName.contains(" ")) {
+            PlayerNameController.setPlayerName(playerName);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     private void startTheGame() {
-        if(!GameProperties.isThreadInitialized)
+        if (!GameProperties.isThreadInitialized)
             gameplay = new Gameplay();
+        GameComponentsInjector.removeMessage();
         GameStatusController.startTheGame();
     }
 }

@@ -14,6 +14,6 @@ public class LevelCounter {
     }
 
     public static void restartLevel() {
-        gameLevel = 3;
+        gameLevel = 1;
     }
 }
