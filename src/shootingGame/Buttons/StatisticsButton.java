@@ -33,7 +33,7 @@ public class StatisticsButton extends JButton {
     }
 
     private void setStatisticsPane() {
-        GameComponentsInjector.setStatisticsLabel();
+        GameComponentsInjector.setStatisticsTextComponent();
         StatisticsController.showStatistics();
     }
 }

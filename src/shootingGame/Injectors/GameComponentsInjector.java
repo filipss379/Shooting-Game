@@ -3,7 +3,7 @@ package shootingGame.Injectors;
 import shootingGame.GameComponents.GamePanel;
 import shootingGame.GameComponents.MenuPanel;
 import shootingGame.GameComponents.Message;
-import shootingGame.GameComponents.StatisticsLabel;
+import shootingGame.GameComponents.StatisticsTextArea;
 import shootingGame.WindowInitializer;
 
 public class GameComponentsInjector {
@@ -11,19 +11,20 @@ public class GameComponentsInjector {
     private static MenuPanel menuPanel;
     private static GamePanel gamePanel;
     private static Message message;
-    private static StatisticsLabel statisticsLabel;
+    private static StatisticsTextArea statisticsTextArea;
     private static int PANELS_WIDTH = 1024;
     private static int PANELS_HEIGHT = 768;
     private static int MESSAGE_WIDTH = 500;
     private static int MESSAGE_HEIGHT = 300;
-    private static int STATISTICS_PANE_WIDTH = 350;
-    private static int STATISTICS_LABEL_HEIGHT = 500;
+    private static int STATISTICS_BOX_WIDTH = 400;
+    private static int STATISTICS_BOX_HEIGHT = 500;
 
     public static void initGameComponents() {
+        message = new Message(MESSAGE_WIDTH, MESSAGE_HEIGHT);
+        statisticsTextArea = new StatisticsTextArea(
+                STATISTICS_BOX_WIDTH, STATISTICS_BOX_HEIGHT);
         menuPanel = new MenuPanel(PANELS_WIDTH, PANELS_HEIGHT);
         gamePanel = new GamePanel(PANELS_WIDTH, PANELS_HEIGHT);
-        message = new Message(MESSAGE_WIDTH, MESSAGE_HEIGHT);
-        statisticsLabel = new StatisticsLabel(STATISTICS_PANE_WIDTH, STATISTICS_LABEL_HEIGHT);
     }
 
     public static void setGamePanel() {
@@ -78,33 +79,34 @@ public class GameComponentsInjector {
             message.remove(ButtonsInjector.getOKButton());
             message.remove(ButtonsInjector.getReturnToMenuButton());
             message.remove(ButtonsInjector.getReturnToGameButton());
-            message.remove(message.getPlayerName());
+            message.remove(message.getPLAYER_NAME());
             message.setVisible(false);
         } catch (NullPointerException ex) {
             System.out.println("Exception while setting visible of JDialog to false" + ex);
         }
     }
 
-    public static void setStatisticsLabel() {
+    public static void setStatisticsTextComponent() {
         try {
             ButtonsInjector.getStartGameButton().setVisible(false);
             ButtonsInjector.getStatisticsButton().setVisible(false);
             ButtonsInjector.getCloseButton().setVisible(false);
-            statisticsLabel.setVisible(true);
-            menuPanel.add(statisticsLabel);
+            ButtonsInjector.getGoToMenuFromStatisticsButton().setVisible(true);
+            statisticsTextArea.setVisible(true);
         } catch(NullPointerException ex) {
-            System.out.println("Exception while adding statistics pane " + ex);
+            System.out.println("Exception while adding statistics label " + ex);
         }
     }
 
-    public static void removeStatisticsLabel() {
+    public static void removeStatisticsTextArea() {
         try {
-            statisticsLabel.setVisible(false);
+            statisticsTextArea.setVisible(false);
+            ButtonsInjector.getGoToMenuFromStatisticsButton().setVisible(false);
             ButtonsInjector.getStartGameButton().setVisible(true);
             ButtonsInjector.getStatisticsButton().setVisible(true);
             ButtonsInjector.getCloseButton().setVisible(true);
         } catch(NullPointerException ex) {
-            System.out.println("Exception while removing statistics pane " + ex);
+            System.out.println("Exception while removing statistics label " + ex);
         }
     }
 
@@ -120,7 +122,7 @@ public class GameComponentsInjector {
         return message;
     }
 
-    public static StatisticsLabel getStatisticsLabel() {
-        return statisticsLabel;
+    public static StatisticsTextArea getStatisticsTextArea() {
+        return statisticsTextArea;
     }
 }

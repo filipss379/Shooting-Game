@@ -31,7 +31,6 @@ public class OKMessageButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                setPlayerName();
                 if(setPlayerName())
                     startTheGame();
             }
@@ -39,7 +38,7 @@ public class OKMessageButton extends JButton {
     }
 
     private boolean setPlayerName() {
-        String playerName = GameComponentsInjector.getMessage().getPlayerName().getText();
+        String playerName = GameComponentsInjector.getMessage().getPLAYER_NAME().getText();
         if(playerName.length()>=1 && !playerName.contains(" ")) {
             PlayerNameController.setPlayerName(playerName);
             return true;

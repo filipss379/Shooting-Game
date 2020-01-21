@@ -1,6 +1,7 @@
 package shootingGame.GameComponents;
 
 import shootingGame.Injectors.ButtonsInjector;
+import shootingGame.Injectors.GameComponentsInjector;
 import shootingGame.Injectors.ResourcesInjector;
 
 import javax.swing.*;
@@ -11,8 +12,10 @@ public class MenuPanel extends JPanel {
     public MenuPanel (final int WIDTH,
                       final int HEIGHT) {
         setSize(WIDTH, HEIGHT);
+        setLayout(null);
         setVisible(true);
         addButtonsToPanel();
+        addStatisticsLabel();
     }
 
     private void addButtonsToPanel() {
@@ -20,8 +23,17 @@ public class MenuPanel extends JPanel {
             add(ButtonsInjector.getStartGameButton());
             add(ButtonsInjector.getStatisticsButton());
             add(ButtonsInjector.getCloseButton());
+            add(ButtonsInjector.getGoToMenuFromStatisticsButton());
         } catch(NullPointerException ex) {
-            System.err.println("Exception while adding buttons " + ex);
+            System.out.println("Exception while adding buttons " + ex);
+        }
+    }
+
+    private void addStatisticsLabel() {
+        try {
+            add(GameComponentsInjector.getStatisticsTextArea());
+        } catch(NullPointerException ex) {
+            System.out.println("Exception while adding statistics label" + ex);
         }
     }
 

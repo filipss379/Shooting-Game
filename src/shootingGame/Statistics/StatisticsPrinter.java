@@ -11,7 +11,7 @@ public class StatisticsPrinter extends PlayersNamesAndScores {
     }
 
     public void printStatisticsOnLabel() {
-        GameComponentsInjector.getStatisticsLabel().setText(
+        GameComponentsInjector.getStatisticsTextArea().setText(
                 statisticsFormatter.changePlayersAndScoresFormat());
     }
 }

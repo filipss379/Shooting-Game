@@ -25,7 +25,6 @@ public class StartGameButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                GameComponentsInjector.setGamePanel();
                 startTheGame();
             }
         });

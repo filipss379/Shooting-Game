@@ -11,8 +11,8 @@ public class ButtonsInjector implements ButtonsValues {
 
     private static JButton[] buttons;
 
-    public static void loadGUIComponents() {
-        buttons = new JButton[6];
+    public static void loadButtons() {
+        buttons = new JButton[7];
         buttons[0] = new CloseButton(
                 MENU_BUTTON_X_POSITION, CLOSE_BUTTON_Y_POSITION, MENU_BUTTON_WIDTH, MENU_BUTTON_HEIGHT);
         buttons[1] = new StatisticsButton(
@@ -25,24 +25,26 @@ public class ButtonsInjector implements ButtonsValues {
                 RETURN_TO_MENU_BUTTON_X_POSITION, MESSAGE_BUTTON_Y_POSITION, MESSAGE_BUTTON_WIDTH, MESSAGE_BUTTON_HEIGHT);
         buttons[5] = new OKMessageButton(
                 OK_BUTTON_X_POSITION, MESSAGE_BUTTON_Y_POSITION, MESSAGE_BUTTON_WIDTH, MESSAGE_BUTTON_HEIGHT);
-        setCommonValues();
+        buttons[6] = new GoToMenuFromStatisticsButton(
+                GO_TO_MENU_FROM_STATISTICS_BUTTON_X_POSITION, GO_TO_MENU_FROM_STATISTICS_BUTTON_Y_POSITION,
+                GO_TO_MENU_FROM_STATISTICS_BUTTON_WIDTH, GO_TO_MENU_FROM_STATISTICS_BUTTON_HEIGHT);
+        setButtonsCommonValues();
     }
 
-    private static void setCommonValues() {
+    private static void setButtonsCommonValues() {
         try {
             for(JButton button : buttons) {
                 button.setBackground(BACKGROUND_NO_ACTION_COLOR);
                 button.setForeground(FOREGROUND_COLOR);
                 button.setFont(FONT);
-                setButtonMouseListener(button);
+                setButtonHoverAction(button);
             }
         } catch(NullPointerException ex) {
-            System.err.println(
-                    "Exception while setting button common values " + ex);
+            System.out.println("Exception while setting button common values " + ex);
         }
     }
 
-    private static void setButtonMouseListener(JButton button) {
+    private static void setButtonHoverAction(JButton button) {
         button.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -78,5 +80,9 @@ public class ButtonsInjector implements ButtonsValues {
 
     public static JButton getOKButton() {
         return buttons[5];
+    }
+
+    public static JButton getGoToMenuFromStatisticsButton() {
+        return buttons[6];
     }
 }

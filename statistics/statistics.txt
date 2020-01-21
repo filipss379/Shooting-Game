@@ -1,6 +1,3 @@
-Kali 20
-Klara 20
-Kuśka 100
-Myszka 220
-Puśka 70
-lk 0
+Marta 260
+Michał 160
+Filip 130
